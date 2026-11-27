@@ -1,0 +1,1 @@
+let vi=false;document.getElementById('lang').addEventListener('click',()=>{vi=!vi;document.documentElement.lang=vi?'vi':'en';document.querySelectorAll('[data-en]').forEach(el=>el.textContent=vi?el.dataset.vi:el.dataset.en);document.getElementById('lang').textContent=vi?'EN':'VI'});document.getElementById('year').textContent=new Date().getFullYear();
